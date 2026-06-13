@@ -1,8 +1,8 @@
 interface Props {
   filter: 'all' | 'active' | 'completed';
   query: string;
-  onFilterChange: (Value: 'all' | 'active' | 'completed') => void;
-  onQueryChange: (Value: string) => void;
+  onFilterChange: (value: 'all' | 'active' | 'completed') => void;
+  onQueryChange: (value: string) => void;
 }
 
 export const TodoFilter: React.FC<Props> = ({
